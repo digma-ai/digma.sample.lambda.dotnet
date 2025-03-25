@@ -31,6 +31,7 @@ To enable tracing, the Lambda resource also have the following attribute: `Traci
 
 This can configurated in the AWS Console for the lambda under `Configuration` -> `Monitoring and operations tools` -> `Edit` -> `CloudWatch Application Signals and AWS X-Ray` -> `Lambda service trace` -> `Enable`
 
+<img width="818" alt="image" src="https://github.com/user-attachments/assets/52bb1b37-c708-4571-a10c-0c8ebb283932" />
 
 
 ### Autoinstrumenting the code ###
@@ -51,6 +52,7 @@ This project uses the [OpenTel.AutoInstrumentation.Digma](https://github.com/dig
 
 Once you've set the right URL and environment settings you'll be able to see the entire trace and assetes show up in your Digma install.
 
+<img width="687" alt="image" src="https://github.com/user-attachments/assets/10197d0f-7c42-4275-88e4-5c4f3f58dbe6" />
 
 
 ## Here are some steps to follow to get started from the command line:

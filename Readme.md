@@ -33,8 +33,16 @@ This can configurated in the AWS Console for the lambda under `Configuration` ->
 
 <img width="818" alt="image" src="https://github.com/user-attachments/assets/52bb1b37-c708-4571-a10c-0c8ebb283932" />
 
+#### Adding the ADOT Layer ####
 
-### Autoinstrumenting the code ###
+The ADOT Layer for lambda includes a collector and the wrapper by which to auto-instrument the .net application, it's defined in the SAM template and you can also add it via the console as seen below: 
+
+<img width="843" alt="image" src="https://github.com/user-attachments/assets/0481f95c-5582-4781-9405-26e3ef9a1ca6" />
+
+You can find a more detailed guide [here](https://aws-otel.github.io/docs/getting-started/lambda/lambda-dotnet)
+
+
+### Autoinstrumenting the code methods ###
 
 This project uses the [OpenTel.AutoInstrumentation.Digma](https://github.com/digma-ai/OpenTelemetry.Instrumentation.Digma/tree/main/src/OpenTelemetry.AutoInstrumentation.Digma) package. This means we can add instrumentation to function in the namespace. This is normally activated via an environment variable, however for lambda functions we need to initial the autoinstrumentation on startup. This is done in the `Startup.cs` file:
 
